@@ -1,0 +1,17 @@
+USAGE
+------
+
+Create, and export your plug-in as "test.myapp_1.0.0.jar". Then you can use it as follows:
+
+ 1. Copy test.myapp_1.0.0.jar to your Eclipse/dropins/ folder
+ 2. Copy all needed plug-ins to the target workspace directory:
+
+    cp -r projects/* NewWorkspace/
+
+ 3. Import needed projects into the workspace:
+
+    eclipse -nosplash -application test.myapp.App -data NewWorkspace -import /path/to/NewWorkspace/project1 -import /path/to/NewWorkspace/project2 etc...
+
+ 4. Now, you can safely remove test.myapp_1.0.0.jar from the Eclipse/dropins/ folder.
+
+
